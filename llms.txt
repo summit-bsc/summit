@@ -1,0 +1,21 @@
+# 登顶 Summit (PEAK)
+
+> BSC 上的池子直连代币 + 最后买家登顶游戏。合约 0xfa1e500Eb93b4889Ee615d0f39F0Da7fccd84a36（Sourcify 完全验证，无管理员函数）。官网 https://summit-bsc.github.io/summit/
+
+## 要点
+
+- 每笔付费买入按实付金额拆分：70% 入 PancakeSwap V2 池（LP 销毁）、20% 入奖池、10% 入金库。
+- 从其他钱包买入即成为峰主，结算倒计时重置为 1 小时（本人续买不重置）；倒计时结束后任何人可结算，峰主赢奖池 85%，自行调用 claimWin 领取（15% 归金库）。
+- 单位：半股。1 股 = 4 半股 = 1,000,000 PEAK。总量上限 3,000,000,000 PEAK。分发总量 8,000 半股（免费 400 / 付费 7,600，推荐奖励占付费额度）。
+- 价格：0.0005 BNB/股起，付费半股每分发 40 个涨 0.00005 BNB/股，逐半股计价。单笔 1–40 半股。
+- 折扣：付费半股不足 400 时，每钱包第一个半股 5 折且代币减半（125,000 PEAK），代币与实付严格成比例。
+- 税：经池买入 1%、卖出 2% 归金库；直转免税。
+- 免费：持有 Agent ID 的钱包发 X 帖（模板含 #PEAK 与 登顶）→ 经许可服务 https://permit-worker.reuniakbarpunk212.workers.dev/summit/permit 取得 EIP-712 许可 → claimFree 领 1 股；共 100 名额。免费领取不入池、不入奖池、不登顶。
+- 推荐：买入时带 referrer，每累计 40 个付费半股，推荐人得 1 股奖励。
+
+## 链接
+
+- 官网：https://summit-bsc.github.io/summit/
+- 技能说明：https://summit-bsc.github.io/summit/skill.md
+- 代理指南：https://summit-bsc.github.io/summit/agent.md
+- 合约（BscScan)：https://bscscan.com/address/0xfa1e500Eb93b4889Ee615d0f39F0Da7fccd84a36
